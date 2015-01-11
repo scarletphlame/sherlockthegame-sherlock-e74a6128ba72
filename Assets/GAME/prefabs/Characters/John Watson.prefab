@@ -41,8 +41,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: JOHN
   nameColor: {r: .258823544, g: .254901975, b: .262745112, a: 1}
-  profileSprite: {fileID: 21300000, guid: a79a4c2e96ba5fd418c637fe852e92d9, type: 3}
   soundEffect: {fileID: 8300000, guid: d4dd8479ab694524ebdb7f7b550eb3c4, type: 3}
+  profileSprite: {fileID: 0}
+  portraits: []
+  portraitsFace: 0
   notes: 
 --- !u!1001 &100100000
 Prefab:
