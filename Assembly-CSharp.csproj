@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{110FE841-D678-4769-07B1-8170A9C1D250}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\ResetAnimTrigger.cs" />
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimBool.cs" />
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimFloat.cs" />
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimInteger.cs" />
+     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimTrigger.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\PlayMusic.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\PlaySound.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\PlayUsfxrSound.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\SetAudioVolume.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\Commands\StopMusic.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\MusicController.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\FadeScreen.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\FadeToView.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\MoveToView.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\ShakeCamera.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\StartSwipe.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\Commands\StopSwipe.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\View.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\Character.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\ChooseDialog.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\Commands\AddOption.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\Commands\Choose.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\Commands\Hide Dialog.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\Commands\Say.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\Dialog.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\DialogParser.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\DialogText.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\SayDialog.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\BooleanVariable.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Command.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\CommandCopyBuffer.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\Call.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\Comment.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\DebugLog.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\Destroy.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\Else.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\EndIf.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\If.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\LoadGlobals.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\LoadScene.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\RandomFloat.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\RandomInteger.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\Reset.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\RunScript.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\SaveGlobals.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\SendEvent.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\SendMessage.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\SetActive.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\SetVariable.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\Stop.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Commands\Wait.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\EventHandler.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\EventHandlers\GameStarted.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\EventHandlers\MessageReceived.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\EventHandlers\ObjectEnabled.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\FloatVariable.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\FungusScript.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\FungusState.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\GlobalVariables.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\IntegerVariable.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Node.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Sequence.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\StringVariable.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\StringsParser.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Variable.cs" />
+     <Compile Include="Assets\Fungus\Portrait\ImageFader.cs" />
+     <Compile Include="Assets\Fungus\Portrait\Portrait.cs" />
+     <Compile Include="Assets\Fungus\Portrait\PortraitStage.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Clickable2D.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Commands\FadeSprite.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Commands\ShowSprite.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Draggable2D.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\DragCancelled.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\DragCompleted.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\DragEntered.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\DragExited.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\DragStarted.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\EventHandlers\ObjectClicked.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Parallax.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\SpriteFader.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\GUIExamplesCS.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\GUISimpleCS.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\GeneralCameraShake.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\GeneralEventsListenersCS.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\GeneralExamplesCS.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\PathSpline.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\PathSpline2d.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\TestingAlphaFade.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\TestingEverything.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\TestingPauseResume.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\TestingPunch.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\TestingRigidbodyCS.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\TestingRotateAround.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\TestingUniqueId.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\TutorialPresentationFinished.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Scripts\UIExampleCS.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrAudioPlayer.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrCacheSurrogate.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrParams.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrSynth.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\iTween\iTween.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\LookFrom.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\LookTo.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\MoveAdd.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\MoveFrom.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\MoveTo.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\PunchPosition.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\PunchRotation.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\PunchScale.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\RotateAdd.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\RotateFrom.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\RotateTo.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ScaleAdd.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ScaleFrom.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ScaleTo.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ShakePosition.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ShakeRotation.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\ShakeScale.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\StopTween.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\StopTweens.cs" />
+     <Compile Include="Assets\Fungus\iTween\Scripts\Commands\iTweenCommand.cs" />
+     <None Include="Assets\Fungus\Thirdparty\LeanTween\LeanTweenExamples\Shader\2dUnlitWithFade.shader" />
+     <None Include="Assets\Fungus\Thirdparty\LeanTween\LeanTween-ReadMe.txt" />
+     <None Include="Assets\FungusExamples\Attribution.txt" />
+     <None Include="Assets\FungusExamples\TheFacility\Fonts\aleo\SIL Open Font License.txt" />
+     <None Include="Assets\Fungus\Thirdparty\ReorderableListField\README.txt" />
+     <None Include="Assets\Fungus\Portrait\Resources\Crossfade.shader" />
+     <None Include="Assets\Fungus\Dialog\Fonts\Amaranth\SIL Open Font License.txt" />
+     <None Include="Assets\Fungus\Thirdparty\ReorderableListField\LICENSE.txt" />
+     <None Include="Assets\Fungus\Dialog\Sprites\Attribution.txt" />
+     <None Include="Assets\Fungus\Thirdparty\ReorderableListField\Editor\Editor.ReorderableList.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{A81BC7B3-CE19-0835-302D-CF16D8656FC3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
